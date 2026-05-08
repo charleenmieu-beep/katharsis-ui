@@ -91,8 +91,8 @@ export default function Home() {
                   absolute
                   left-1/2
                   top-1/2
-                  w-[80%]
-                  h-[80%]
+                  w-[100%]
+                  h-[100%]
                   -translate-x-1/2
                   -translate-y-1/2
                   object-contain
