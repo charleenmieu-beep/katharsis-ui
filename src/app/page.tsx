@@ -199,7 +199,7 @@ export default function Home() {
 
           {/* CENTER PANEL */}
 
-<section className="relative overflow-hidden flex items-center justify-center bg-[#768691] min-h-[95vh] lg:min-h-0 w-full pb-40 sm:pb-0">  {/* GRID */}
+<section className="relative overflow-hidden flex flex-col justify-between bg-[#768691] min-h-[100vh] lg:min-h-0 w-full">  {/* GRID */}
 
   <div className="absolute inset-0 opacity-[0.08]">
 
@@ -237,7 +237,7 @@ export default function Home() {
     relative
     z-10
 
-    mt-32 sm:mt-20 lg:mt-0
+    mt-16 sm:mt-20 lg:mt-0
 
     h-[58vh]
     sm:h-[70vh]
@@ -250,7 +250,7 @@ export default function Home() {
 />
   {/* IMAGE LIBRARY */}
 
-<div className="absolute -bottom-24 sm:bottom-0 left-0 right-0 z-30">
+<div className="relative sm:absolute sm:bottom-0 left-0 right-0 z-30 mt-10 sm:mt-0">
     <div className="border-t border-[#6f7e87] bg-[#73818b]/80 backdrop-blur-md px-8 py-5">
 
       {/* HEADER */}
