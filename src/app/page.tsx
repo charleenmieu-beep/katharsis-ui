@@ -17,36 +17,36 @@ export default function Home() {
 
   return (
 
-    <main className="min-h-screen bg-[#788892] text-[#d6dde2] overflow-x-hidden overflow-y-auto">
+    <main className="min-h-screen bg-[#708090] text-[#e4edf2] overflow-x-hidden overflow-y-auto">
 
       {/* MAIN CONTAINER */}
 
-      <div className="relative min-h-screen border border-[#5d6972] m-4 bg-[#8696a0] shadow-[0_0_50px_rgba(0,0,0,0.28)]">
+      <div className="relative min-h-screen border border-[#8796a3] m-4 bg-[#7b8b97] shadow-[0_0_50px_rgba(0,0,0,0.28)]">
 
         {/* CORNERS */}
 
-        <div className="absolute top-4 left-4 w-5 h-5 border-l border-t border-[#93a8b4]" />
-        <div className="absolute top-4 right-4 w-5 h-5 border-r border-t border-[#93a8b4]" />
-        <div className="absolute bottom-4 left-4 w-5 h-5 border-l border-b border-[#93a8b4]" />
-        <div className="absolute bottom-4 right-4 w-5 h-5 border-r border-b border-[#93a8b4]" />
+        <div className="absolute top-4 left-4 w-5 h-5 border-l border-t border-[#b4c0c9]" />
+        <div className="absolute top-4 right-4 w-5 h-5 border-r border-t border-[#b4c0c9]" />
+        <div className="absolute bottom-4 left-4 w-5 h-5 border-l border-b border-[#b4c0c9]" />
+        <div className="absolute bottom-4 right-4 w-5 h-5 border-r border-b border-[#b4c0c9]" />
 
         {/* TOP BAR */}
 
-        <header className="h-20 border-b border-[#66757f] flex items-center justify-between px-10 bg-[#81919a]/80 backdrop-blur-sm">
+        <header className="h-20 border-b border-[#93a1ad] flex items-center justify-between px-10 bg-[#748490]/90 backdrop-blur-sm">
 
           <div className="flex items-center gap-10">
 
-            <div className="uppercase tracking-[0.42em] text-[12px] text-[#edf5f8]">
+            <div className="uppercase tracking-[0.42em] text-[12px] text-[#f3f8fb]">
               PALISADE SYSTEM
             </div>
 
-            <div className="uppercase tracking-[0.28em] text-[10px] text-[#b8c6ce]">
+            <div className="uppercase tracking-[0.28em] text-[10px] text-[#d1dbe2]">
               SYS. VER. 2.7.1
             </div>
 
           </div>
 
-          <div className="flex items-center gap-10 uppercase tracking-[0.25em] text-[10px] text-[#b8c6ce]">
+          <div className="flex items-center gap-10 uppercase tracking-[0.25em] text-[10px] text-[#d1dbe2]">
 
             <div>
               USER: [ ---------- ]
@@ -72,11 +72,11 @@ export default function Home() {
 
           {/* LEFT PANEL */}
 
-          <aside className="border-r border-[#66757f] p-8 flex flex-col bg-[#7b8a94]/70">
+          <aside className="border-r border-[#93a1ad] p-8 flex flex-col bg-[#6f7f8a]/75">
 
             {/* LOGO */}
 
-            <div className="relative border border-[#74828b] bg-[#6f5d8533] h-[620px] overflow-hidden flex items-center justify-center shadow-inner">
+            <div className="relative border border-[#74828b] bg-[#5f6d7828] h-[620px] overflow-hidden flex items-center justify-center shadow-inner">
 
               <img
                 src="/plogo2.png"
@@ -90,18 +90,18 @@ export default function Home() {
                   -translate-x-1/2
                   -translate-y-1/2
                   object-contain
-                  opacity-[0.28]
+                  opacity-[0.34]
                   scale-[1.3]
-                  contrast-125
-                  brightness-125
+                  contrast-150
+                  brightness-140
                 "
               />
 
-              <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(157,233,240,0.12)_0%,transparent_70%)]" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(180,220,235,0.16)_0%,transparent_70%)]" />
 
               <div className="relative z-20 text-center">
 
-                <div className="text-[36px] tracking-[0.32em] text-[#edf5f8] pl-5">
+                <div className="text-[36px] tracking-[0.32em] text-[#f3f8fb] pl-5">
 
                   PALISADE
 
@@ -159,7 +159,7 @@ export default function Home() {
 
                   </span>
 
-                  <span className="text-[#edf5f8]">
+                  <span className="text-[#f3f8fb]">
 
                     {item}
 
@@ -181,7 +181,7 @@ export default function Home() {
 
               </div>
 
-              <div className="text-[11px] text-[#edf5f8]">
+              <div className="text-[11px] text-[#f3f8fb]">
 
                 &gt; No new alerts.
 
@@ -303,7 +303,7 @@ export default function Home() {
               group-hover:opacity-100
               transition-opacity
               duration-300
-              bg-[radial-gradient(circle_at_center,rgba(157,233,240,0.12),transparent_70%)]
+              bg-[radial-gradient(circle_at_center,rgba(87, 231, 106, 0.3),transparent_70%)]
             " />
 
             {/* SLOT TEXT */}
@@ -337,40 +337,67 @@ export default function Home() {
 </section>
           {/* RIGHT PANEL */}
 
-          <aside className="border-l border-[#66757f] p-8 overflow-y-auto bg-[#7b8a94]/70">
+          <aside className="border-l border-[#93a1ad] p-8 overflow-y-auto bg-[#6f7f8a]/75">
 
-            {/* SUBJECT PROFILE */}
+           {/* SUBJECT PROFILE */}
 
-            <div className="mb-10">
+<div className="mb-10">
 
-              <div className="uppercase tracking-[0.28em] text-[11px] text-[#c4d0d7] mb-5">
+  <div className="uppercase tracking-[0.28em] text-[11px] text-[#c4d0d7] mb-5">
 
-                Subject Profile
+    Subject Profile
 
-              </div>
+  </div>
 
-              <div className="border border-[#74828b] bg-[#6f5d8528] p-6">
+  <div className="border border-[#74828b] bg-[#6f5d8528] p-6 backdrop-blur-sm">
 
-                <div className="grid grid-cols-2 gap-y-5 text-sm">
+    <div className="grid grid-cols-2 gap-y-5 text-sm">
 
-                  <div className="text-[#c4d0d7]">ID</div>
-                  <div>R9-0412-YH</div>
+      <div className="text-[#c4d0d7]">
+        ID
+      </div>
 
-                  <div className="text-[#c4d0d7]">Affiliation</div>
-                  <div>Palisade</div>
+      <div>
+        R9-0412-YH
+      </div>
 
-                  <div className="text-[#c4d0d7]">Role</div>
-                  <div>Field Operative</div>
+      <div className="text-[#c4d0d7]">
+        Affiliation
+      </div>
 
-                  <div className="text-[#c4d0d7]">Clearance</div>
-                  <div>04</div>
+      <div>
+        Palisade
+      </div>
 
-                </div>
+      <div className="text-[#c4d0d7]">
+        Role
+      </div>
 
-              </div>
+      <div>
+        Field Operative
+      </div>
 
-            </div>
+      <div className="text-[#c4d0d7]">
+        Callsign
+      </div>
 
+      <div className="tracking-[0.18em] text-[#9de9f0]">
+        VANTAGE
+      </div>
+
+      <div className="text-[#c4d0d7]">
+        Clearance
+      </div>
+
+      <div>
+        04
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
             {/* SYSTEM STATUS */}
 
             <div className="mb-10">
