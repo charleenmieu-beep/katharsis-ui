@@ -199,7 +199,9 @@ export default function Home() {
 
           {/* CENTER PANEL */}
 
-<section className="relative overflow-visible flex flex-col bg-[#768691] min-h-[1400px] lg:min-h-0 w-full">  {/* GRID */}
+<section className="relative overflow-hidden flex flex-col bg-[#768691] min-h-[105vh] sm:min-h-[115vh] lg:min-h-0 w-full">
+
+  {/* GRID */}
 
   <div className="absolute inset-0 opacity-[0.08]">
 
@@ -217,7 +219,10 @@ export default function Home() {
 
   {/* NAME */}
 
-<div className="absolute top-3 sm:top-6 left-1/2 -translate-x-1/2 z-20 text-center px-4 w-full flex justify-center pointer-events-none"><div className="rounded-2xl sm:rounded-3xl border border-white/15 bg-black/10 backdrop-blur-md shadow-lg w-[92%] sm:w-auto max-w-[680px] px-4 sm:px-8 py-3 sm:py-6">
+  <div className="absolute top-3 sm:top-6 left-1/2 -translate-x-1/2 z-20 text-center px-4 w-full flex justify-center pointer-events-none">
+
+    <div className="rounded-2xl sm:rounded-3xl border border-white/15 bg-black/10 backdrop-blur-md shadow-lg w-[92%] sm:w-auto max-w-[680px] px-4 sm:px-8 py-3 sm:py-6">
+
       <div className="text-[22px] sm:text-[36px] tracking-[0.18em] sm:tracking-[0.32em] leading-[1.5] sm:leading-normal text-[#f0f6fa] break-words">
 
         SIENNA V. CROSS
@@ -230,28 +235,32 @@ export default function Home() {
 
   {/* CHARACTER */}
 
- <img
-  src="/Sienna2.png"
-  alt="character"
-  className="
-    relative
-    z-10
+  <div className="flex justify-center items-start pt-28 sm:pt-36 lg:pt-16">
 
-    mt-16 sm:mt-20 lg:mt-0
+    <img
+      src="/Sienna2.png"
+      alt="character"
+      className="
+        relative
+        z-10
 
-   h-[78vh]
-sm:h-[82vh]
-lg:h-[108vh]
+        h-[72vh]
+        sm:h-[82vh]
+        lg:h-[108vh]
 
-    object-contain
+        object-contain
 
-    drop-shadow-[0_30px_70px_rgba(0,0,0,0.35)]
-  "
-/>
+        drop-shadow-[0_30px_70px_rgba(0,0,0,0.35)]
+      "
+    />
+
+  </div>
+
   {/* IMAGE LIBRARY */}
 
-<div className="relative lg:absolute lg:bottom-0 left-0 right-0 z-30 mt-16 lg:mt-0">
-    <div className="border-t border-[#6f7e87] bg-[#73818b]/80 backdrop-blur-md px-8 py-5">
+  <div className="relative z-30 mt-[-30px] sm:mt-[-60px] lg:mt-auto">
+
+    <div className="border-t border-[#6f7e87] bg-[#73818b]/80 backdrop-blur-md px-4 sm:px-8 py-5">
 
       {/* HEADER */}
 
