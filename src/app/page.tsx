@@ -231,18 +231,24 @@ export default function Home() {
 
   {/* CHARACTER */}
 
-  <img
-    src="/Sienna2.png"
-    alt="character"
-    className="
-      relative
-      z-10
-      max-h-[70vh] lg:max-h-[108vh] w-auto max-w-full
-      object-contain
-      drop-shadow-[0_30px_70px_rgba(0,0,0,0.35)]
-    "
-  />
+ <img
+  src="/Sienna2.png"
+  alt="character"
+  className="
+    relative
+    z-10
 
+    mt-32 sm:mt-20 lg:mt-0
+
+    h-[58vh]
+    sm:h-[70vh]
+    lg:h-[108vh]
+
+    object-contain
+
+    drop-shadow-[0_30px_70px_rgba(0,0,0,0.35)]
+  "
+/>
   {/* IMAGE LIBRARY */}
 
   <div className="absolute bottom-0 left-0 right-0 z-30">
