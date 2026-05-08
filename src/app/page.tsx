@@ -17,11 +17,11 @@ export default function Home() {
 
   return (
 
-    <main className="min-h-screen bg-[#708090] text-[#e4edf2] overflow-x-hidden overflow-y-auto">
+    <main className="min-h-screen w-full bg-[#708090] text-[#e4edf2] overflow-x-hidden overflow-y-auto">
 
       {/* MAIN CONTAINER */}
 
-      <div className="relative min-h-screen border border-[#8796a3] m-4 bg-[#7b8b97] shadow-[0_0_50px_rgba(0,0,0,0.28)]">
+      <div className="relative min-h-screen w-full overflow-hidden border border-[#8796a3] m-0 lg:m-4 bg-[#7b8b97] shadow-[0_0_50px_rgba(0,0,0,0.28)]">
 
         {/* CORNERS */}
 
@@ -32,10 +32,9 @@ export default function Home() {
 
         {/* TOP BAR */}
 
-        <header className="h-20 border-b border-[#93a1ad] flex items-center justify-between px-10 bg-[#748490]/90 backdrop-blur-sm">
+        <header className="min-h-[80px] border-b border-[#93a1ad] flex flex-col lg:flex-row lg:items-center justify-center lg:justify-between px-4 sm:px-6 lg:px-10 py-4 gap-4 bg-[#748490]/90 backdrop-blur-sm">
 
-          <div className="flex items-center gap-10">
-
+<div className="flex items-center gap-4 sm:gap-8 lg:gap-10 flex-wrap justify-center lg:justify-start">
             <div className="uppercase tracking-[0.42em] text-[12px] text-[#f3f8fb]">
               PALISADE SYSTEM
             </div>
@@ -46,7 +45,7 @@ export default function Home() {
 
           </div>
 
-          <div className="flex items-center gap-10 uppercase tracking-[0.25em] text-[10px] text-[#d1dbe2]">
+          <div className="flex items-center gap-4 sm:gap-8 lg:gap-10 uppercase tracking-[0.18em] sm:tracking-[0.25em] text-[9px] sm:text-[10px] text-[#d1dbe2] flex-wrap justify-center">
 
             <div>
               USER: [ ---------- ]
@@ -68,15 +67,22 @@ export default function Home() {
 
         {/* GRID */}
 
-        <div className="grid grid-cols-[320px_1fr_420px] min-h-[calc(100vh-80px)]">
+       <div
+  className="
+    grid
+    grid-cols-1
+    lg:grid-cols-[320px_minmax(0,1fr)_420px]
+    min-h-[calc(100vh-80px)]
+    overflow-hidden
+  "
+>
 
           {/* LEFT PANEL */}
 
-          <aside className="border-r border-[#93a1ad] p-8 flex flex-col bg-[#6f7f8a]/75">
-
+          <aside className="border-b lg:border-b-0 lg:border-r border-[#93a1ad] p-4 sm:p-6 lg:p-8 flex flex-col bg-[#6f7f8a]/75 overflow-hidden">
             {/* LOGO */}
 
-            <div className="relative border border-[#74828b] bg-[#5f6d7828] h-[620px] overflow-hidden flex items-center justify-center shadow-inner">
+            <div className="relative border border-[#74828b] bg-[#5f6d7828] h-[420px] lg:h-[620px] overflow-hidden flex items-center justify-center shadow-inner">
 
               <img
                 src="/plogo2.png"
@@ -85,8 +91,8 @@ export default function Home() {
                   absolute
                   left-1/2
                   top-1/2
-                  w-[150%]
-                  h-[150%]
+                  w-[125%]
+                  h-[125%]
                   -translate-x-1/2
                   -translate-y-1/2
                   object-contain
@@ -193,8 +199,7 @@ export default function Home() {
 
           {/* CENTER PANEL */}
 
-<section className="relative overflow-hidden flex items-center justify-center bg-[#7f8d96]">
-
+<section className="relative overflow-hidden flex items-center justify-center bg-[#768691] min-h-[65vh] lg:min-h-0 w-full">
   {/* GRID */}
 
   <div className="absolute inset-0 opacity-[0.08]">
@@ -213,10 +218,9 @@ export default function Home() {
 
   {/* NAME */}
 
-  <div className="absolute top-6 left-1/6 -translate-x-1/9 z-20 text-center">
+  <div className="absolute top-6 left-1/2 -translate-x-1/2 z-20 text-center w-full px-4">
 
-    <div className="3xl border border-white/20 bg-grey/15 px-8 py-6 backdrop-blur-md shadow-lg">
-
+<div className="rounded-3xl border border-white/20 bg-black/10 px-4 sm:px-8 py-4 sm:py-6 backdrop-blur-md shadow-lg max-w-full">
       <div className="text-[36px] tracking-[0.32em] text-[#f0f6fa]">
 
         SIENNA V. CROSS
@@ -235,7 +239,7 @@ export default function Home() {
     className="
       relative
       z-10
-      h-[108vh]
+      max-h-[70vh] lg:max-h-[108vh] w-auto max-w-full
       object-contain
       drop-shadow-[0_30px_70px_rgba(0,0,0,0.35)]
     "
@@ -303,7 +307,7 @@ export default function Home() {
               group-hover:opacity-100
               transition-opacity
               duration-300
-              bg-[radial-gradient(circle_at_center,rgba(87, 231, 106, 0.3),transparent_70%)]
+              bg-[radial-gradient(circle_at_center,rgba(87,231,106,0.3),transparent_70%)]
             " />
 
             {/* SLOT TEXT */}
@@ -337,8 +341,7 @@ export default function Home() {
 </section>
           {/* RIGHT PANEL */}
 
-          <aside className="border-l border-[#93a1ad] p-8 overflow-y-auto bg-[#6f7f8a]/75">
-
+<aside className="border-t lg:border-t-0 lg:border-l border-[#66757f] p-4 sm:p-6 lg:p-8 overflow-hidden bg-[#7b8a94]/70">
            {/* SUBJECT PROFILE */}
 
 <div className="mb-10">
