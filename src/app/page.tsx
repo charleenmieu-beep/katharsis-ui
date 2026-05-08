@@ -82,7 +82,7 @@ export default function Home() {
           <aside className="border-b lg:border-b-0 lg:border-r border-[#93a1ad] p-4 sm:p-6 lg:p-8 flex flex-col bg-[#6f7f8a]/75 overflow-hidden">
             {/* LOGO */}
 
-            <div className="relative border border-[#74828b] bg-[#5f6d7828] h-[420px] lg:h-[620px] overflow-hidden flex items-center justify-center shadow-inner">
+            <div className="relative border border-[#74828b] bg-[#5f6d7828] h-[680px] lg:h-[620px] overflow-hidden flex items-center justify-center shadow-inner">
 
               <img
                 src="/plogo2.png"
@@ -91,13 +91,13 @@ export default function Home() {
                   absolute
                   left-1/2
                   top-1/2
-                  w-[125%]
-                  h-[125%]
+                  w-[80%]
+                  h-[80%]
                   -translate-x-1/2
                   -translate-y-1/2
                   object-contain
                   opacity-[0.34]
-                  scale-[1.3]
+                  scale-[0.82]
                   contrast-150
                   brightness-140
                 "
@@ -199,7 +199,7 @@ export default function Home() {
 
           {/* CENTER PANEL */}
 
-<section className="relative overflow-hidden flex flex-col justify-between bg-[#768691] min-h-[100vh] lg:min-h-0 w-full">  {/* GRID */}
+<section className="relative overflow-visible flex flex-col bg-[#768691] min-h-[1400px] lg:min-h-0 w-full">  {/* GRID */}
 
   <div className="absolute inset-0 opacity-[0.08]">
 
@@ -239,9 +239,9 @@ export default function Home() {
 
     mt-16 sm:mt-20 lg:mt-0
 
-    h-[58vh]
-    sm:h-[70vh]
-    lg:h-[108vh]
+   h-[78vh]
+sm:h-[82vh]
+lg:h-[108vh]
 
     object-contain
 
@@ -250,7 +250,7 @@ export default function Home() {
 />
   {/* IMAGE LIBRARY */}
 
-<div className="relative sm:absolute sm:bottom-0 left-0 right-0 z-30 mt-10 sm:mt-0">
+<div className="relative lg:absolute lg:bottom-0 left-0 right-0 z-30 mt-16 lg:mt-0">
     <div className="border-t border-[#6f7e87] bg-[#73818b]/80 backdrop-blur-md px-8 py-5">
 
       {/* HEADER */}
