@@ -107,7 +107,7 @@ export default function Home() {
 
               <div className="relative z-20 text-center">
 
-                <div className="text-[36px] tracking-[0.32em] text-[#f3f8fb] pl-5">
+                <div className="text-[24px] lg:text-[36px] tracking-[0.22em] lg:tracking-[0.32em] text-[#f3f8fb] pl-2 lg:pl-5">
 
                   PALISADE
 
@@ -218,10 +218,8 @@ export default function Home() {
 
   {/* NAME */}
 
-  <div className="absolute top-6 left-1/2 -translate-x-1/2 z-20 text-center w-full px-4">
-
-<div className="rounded-3xl border border-white/20 bg-black/10 px-4 sm:px-8 py-4 sm:py-6 backdrop-blur-md shadow-lg max-w-full">
-      <div className="text-[36px] tracking-[0.32em] text-[#f0f6fa]">
+<div className="absolute top-3 sm:top-6 left-1/2 -translate-x-1/2 z-20 text-center px-4 w-full flex justify-center pointer-events-none"><div className="rounded-2xl sm:rounded-3xl border border-white/15 bg-black/10 backdrop-blur-md shadow-lg w-[92%] sm:w-auto max-w-[680px] px-4 sm:px-8 py-3 sm:py-6">
+      <div className="text-[22px] sm:text-[36px] tracking-[0.18em] sm:tracking-[0.32em] leading-[1.5] sm:leading-normal text-[#f0f6fa] break-words">
 
         SIENNA V. CROSS
 
