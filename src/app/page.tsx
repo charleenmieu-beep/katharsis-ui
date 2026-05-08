@@ -251,7 +251,7 @@ export default function Home() {
 />
   {/* IMAGE LIBRARY */}
 
-  <div className="absolute bottom-0 left-0 right-0 z-30">
+  <div className="absolute -bottom-24 sm:bottom-0 left-0 right-0 z-30">
 
     <div className="border-t border-[#6f7e87] bg-[#73818b]/80 backdrop-blur-md px-8 py-5">
 
